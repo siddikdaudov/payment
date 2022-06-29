@@ -1,0 +1,25 @@
+{
+  "name": "pay",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "server": "cd server && npm run server",
+		"client": "cd client && npm run build",
+		"build": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siddikdaudov/payment.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/siddikdaudov/payment/issues"
+  },
+  "homepage": "https://github.com/siddikdaudov/payment#readme",
+  "dependencies": {
+    "concurrently": "^7.2.2"
+  }
+}
