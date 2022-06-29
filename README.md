@@ -7,4 +7,5 @@
 
 ### 2. Запустите проект в главной папке
 - cd payment
+- npm i
 - npm run dev
