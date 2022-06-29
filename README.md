@@ -1,6 +1,6 @@
 ### 1. Установите все зависимости
 - cd client
--npm i
+- npm i
 
 - cd server
 - npm i
