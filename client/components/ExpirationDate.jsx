@@ -8,6 +8,7 @@ import { useAppContext } from "../context/state";
 const ExpirationDate = () => {
   const values = useAppContext();
   const { date } = useAppContext();
+  console.log(date, values);
   const { setValues } = useAppContext();
 
   const handleChange = (prop, newValue) => {
@@ -17,9 +18,9 @@ const ExpirationDate = () => {
   const showWarning = () => {
     if (
       date === "null" ||
-      date[0] === "0" ||
       date[1] === "0" ||
-      date[2] === "0"
+      (date[1] === "0" && date[2] === '0') ||
+      (date[2] === "0" && date[3] === '0')
     ) {
       alert("Исправьте дату");
       return;
